@@ -1,0 +1,54 @@
+/*
+ Theme Name:   Div Them Child
+ Theme URI:    
+ Description:  Divi theme custumization
+ Author:       Marcos Sibilio Jr.
+ Author URI:   
+ Template:     Divi
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         
+ Text Domain:  Divi-child
+*/
+
+#et_search_icon{
+	display: none;
+}
+
+@keyframes animation-hover-on{
+	from{
+		padding: 0px;
+		background-color: white;
+	}
+	to{
+		padding: 10px;
+		background-color: rgba(255, 204, 80, 0.5);
+	}
+}
+
+@keyframes animation-hover-off{
+	from{
+		padding: 10px;
+		background-color: rgba(255, 204, 80, 0.5);
+	}
+	to{
+		padding: 0px;
+		background-color: white;
+	}
+}
+
+.selecao-servico{
+	animation-name: animation-hover-off;
+	animation-duration: 0.35s;	
+}
+
+.selecao-servico:hover{
+	background-color: rgba(255, 204, 80, 0.5);
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(255, 204, 80);
+	animation-name: animation-hover-on;
+	animation-duration: 0.35s;
+	padding: 10px;
+}
